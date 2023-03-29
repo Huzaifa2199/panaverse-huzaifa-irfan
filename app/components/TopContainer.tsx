@@ -22,7 +22,7 @@ export const TopContainer = () => {
     children: (
       <div className="inset center flex-col">
         <h1 className="headline  white text-center font-bold opacity-[85%] max-sm:text-[60px]">Welcome!</h1>
-        <p className="mb-20 max-w-5xl text-center drop-shadow-2xl px-5">The Future of the Web is Web 3.0, Metaverse, and Edge Computing. Panaverse DAO is a movement to spread these technolgies globally. It is community of Web 3 and Metaverse developers, designers, trainers, startup founders and service providers.</p>
+        <p className="mb-[90px] lg:mb-20 max-w-5xl text-center drop-shadow-2xl px-5">The Future of the Web is Web 3.0, Metaverse, and Edge Computing. Panaverse DAO is a movement to spread these technolgies globally. It is community of Web 3 and Metaverse developers, designers, trainers, startup founders and service providers.</p>
       </div>
     )
   };

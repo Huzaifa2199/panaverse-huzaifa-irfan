@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { FaArrowRight } from 'react-icons/fa'
-import { GiHamburgerMenu } from 'react-icons/gi'
-import { RxCross2 } from 'react-icons/rx'
+import { HamBar } from './icons/HamBar'
+import { Cross } from './icons/Cross'
 
 export const Header = () => {
   const [toggle, setToggle] = useState(true)
@@ -27,7 +27,7 @@ export const Header = () => {
             setToggle(!toggle)
             console.log(toggle)
           }}>
-          {toggle ? <GiHamburgerMenu size={"25px"} color={"#f3f4f6"} /> : <RxCross2 size={"25px"} color={"#f3f4f6"} />}
+          {toggle ? <HamBar /> : <Cross />}
         </div>
 
         {/* Overlay Menu */}
