@@ -32,7 +32,7 @@ export const Header = () => {
 
         {/* Overlay Menu */}
         {!toggle && (
-          <div className='bg-[#120723] px-6 py-14 flex flex-col fixed h-screen top-0 left-0 w-full justify-between'>
+          <div className='bg-[#120723] px-6 py-16 flex flex-col fixed h-screen top-0 left-0 w-full justify-between'>
             <div></div>
             <ul className='' >
               <li className='mb-6 text-lg font-semibold'>Quarters</li>
