@@ -12,7 +12,7 @@ export const Faq = () => {
 
                     <h6 className='text-[#ef666c]'>FAQ</h6>
                     <h3 className=''>Frequenty asked questions</h3>
-                    <p className='my-8'>we understand that you may have questions about this course. That's why we've put together this comprehensive FAQ page to provide answers to some of the most common questions we receive. If you can't find the answer to your question here, please don't hesitate to reach out to our students support team.</p>
+                    <p className='my-8'>We understand that you may have questions about this course. Thats why we have put together this comprehensive FAQ page to provide answers to some of the most common questions we receive. If you can not find the answer to your question here, please do not hesitate to reach out to our students support team.</p>
                     <button className="bg-[#ef666c] hover:bg-[#ef666c] hover:underline px-10 w-max rounded-lg text-white font-bold py-3 inline-flex items-center">
                         <span>Contact Us</span>
                         <div className="mt-[2px] ml-3">
