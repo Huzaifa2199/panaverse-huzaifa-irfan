@@ -1,3 +1,4 @@
+import BgBlob from './components/BgBlob'
 import './globals.css'
 
 export const metadata = {
@@ -12,7 +13,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <BgBlob />
+        <main>
+          {children}
+        </main>
+      </body>
     </html>
   )
 }
