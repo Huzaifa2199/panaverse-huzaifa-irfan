@@ -4,7 +4,7 @@ import { FaArrowRight } from 'react-icons/fa'
 
 export const Faq = () => {
     return (
-        <div className='pb-16 pt-20  px-5 lg:px-24' id='faq'>
+        <div className='lg:pb-16 pb-10 pt-20  px-5 lg:px-24' id='faq'>
             <div className='flex flex-col lg:flex-row justify-between'>
 
 

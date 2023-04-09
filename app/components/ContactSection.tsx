@@ -3,7 +3,7 @@ import { FaArrowRight } from 'react-icons/fa'
 
 export default function ContactSection() {
     return (
-        <div className='pt-16 pb-20 px-5 lg:px-24' id='contact'>
+        <div className='lg:pt-16 pt-10 pb-20 px-5 lg:px-24' id='contact'>
             <div className='flex flex-col lg:flex-row justify-between max-lg:flex-col-reverse'>
 
                 {/* column 1 */}
