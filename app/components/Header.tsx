@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { FaArrowRight } from 'react-icons/fa'
 import { HamBar } from './icons/HamBar'
 import { Cross } from './icons/Cross'
+import Link from 'next/link'
 
 export const Header = () => {
   const [toggle, setToggle] = useState(true)
@@ -9,19 +10,33 @@ export const Header = () => {
   return (
     <section className='fixed w-full z-10'>
       <div className='glasshead flex justify-between items-center text-white pt-6 pb-5 px-5 lg:px-24'>
-        <img className='h-12 z-20' src="images/panaverse-png.png" alt="logo" />
+        <a href={"/"}>
+          <img className='h-12 z-20' src="images/panaverse-png.png" alt="logo" />
+        </a>
         <ul className='flex max-lg:hidden'>
-          <li className='mx-6 hover:text-[#ef666c] duration-500 hover:scale-110 cursor-pointer text-lg font-semibold'>Quarters</li>
-          <li className='mx-6 hover:text-[#ef666c] duration-500 hover:scale-110 cursor-pointer text-lg font-semibold'>About</li>
-          <li className='mx-6 hover:text-[#ef666c] duration-500 hover:scale-110 cursor-pointer text-lg font-semibold'>FAQ</li>
-          <li className='mx-6 hover:text-[#ef666c] duration-500 hover:scale-110 cursor-pointer text-lg font-semibold'>Contact</li>
+          <a href="#quarters">
+            <li className='mx-7 hover:text-[#ef666c] duration-500 hover:scale-110 cursor-pointer text-lg font-semibold'>Quarters</li>
+          </a>
+
+          <a href="#about">
+            <li className='mx-7 hover:text-[#ef666c] duration-500 hover:scale-110 cursor-pointer text-lg font-semibold'>About Us</li>
+          </a>
+
+          <a href="#faq">
+            <li className='mx-7 hover:text-[#ef666c] duration-500 hover:scale-110 cursor-pointer text-lg font-semibold'>FAQ</li>
+          </a>
+
+          <a href="#contact">
+            <li className='mx-7 hover:text-[#ef666c] duration-500 hover:scale-110 cursor-pointer text-lg font-semibold'>Contact Us</li>
+          </a>
         </ul>
-        <button className="max-lg:hidden bg-[#ef666c] hover:bg-[#ef666c] hover:underline px-8 w-max rounded-lg text-white font-bold py-2 inline-flex items-center">
-          <span>Apply Now</span>
-          <div className="mt-[2px] ml-3">
-            <FaArrowRight size={"16px"} color={"#f3f4f6"}></FaArrowRight>
-          </div>
-        </button>
+
+        <Link href={"https://www.piaic.org/"} target='_blank'>
+          <button className="max-lg:hidden bg-[#ef666c] hover:bg-[#ef666c] hover:scale-110 duration-300 px-11 w-max rounded-lg text-white font-bold py-[10px] inline-flex items-center">
+            <span>Apply Now</span>
+          </button>
+        </Link>
+
         <div className='cursor-pointer lg:hidden z-20'
           onClick={() => {
             setToggle(!toggle)
@@ -32,20 +47,27 @@ export const Header = () => {
 
         {/* Overlay Menu */}
         {!toggle && (
-          <div className='bg-[#120723] px-6 py-16 flex flex-col fixed h-screen top-0 left-0 w-full justify-between'>
+          <div className='bg-[#120723] px-6 py-16 flex flex-col fixed h-screen top-0 left-0 w-full justify-center'>
             <div></div>
             <ul className='' >
-              <li className='mb-6 text-lg font-semibold'>Quarters</li>
-              <li className='mb-6 text-lg font-semibold'>About</li>
-              <li className='mb-6 text-lg font-semibold'>FAQ</li>
-              <li className='mb-6 text-lg font-semibold'>Contact</li>
+              <a href="#quarters" onClick={() => { setToggle(!toggle) }}>
+                <li className='mb-6 text-lg font-semibold'>Quarters</li>
+              </a>
+              <a href="#about" onClick={() => { setToggle(!toggle) }}>
+                <li className='mb-6 text-lg font-semibold'>About Us</li>
+              </a>
+              <a href="#faq" onClick={() => { setToggle(!toggle) }}>
+                <li className='mb-6 text-lg font-semibold'>FAQ</li>
+              </a>
+              <a href="#contact" onClick={() => { setToggle(!toggle) }}>
+                <li className='mb-6 text-lg font-semibold'>Contact Us</li>
+              </a>
             </ul>
-            <button className="bg-[#ef666c] hover:bg-[#ef666c] hover:underline px-8 w-max h-max rounded-lg text-white font-bold py-2 inline-flex items-center">
-              <span>Apply Now</span>
-              <div className="mt-[2px] ml-3">
-                <FaArrowRight size={"16px"} color={"#f3f4f6"}></FaArrowRight>
-              </div>
-            </button>
+            <Link href={"https://www.piaic.org/"} target='_blank'>
+              <button className="bg-[#ef666c] hover:bg-[#ef666c] hover:underline px-11 w-max h-max rounded-lg text-white font-bold py-[10px] inline-flex items-center">
+                <span>Apply Now</span>
+              </button>
+            </Link>
           </div>
         )}
         {/* Overlay ends */}

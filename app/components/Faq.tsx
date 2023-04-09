@@ -1,9 +1,10 @@
+import Link from 'next/link'
 import React from 'react'
 import { FaArrowRight } from 'react-icons/fa'
 
 export const Faq = () => {
     return (
-        <div className='py-20 px-5 lg:px-24'>
+        <div className='pb-16 pt-20  px-5 lg:px-24' id='faq'>
             <div className='flex flex-col lg:flex-row justify-between'>
 
 
@@ -13,12 +14,12 @@ export const Faq = () => {
                     <h6 className='text-[#ef666c]'>FAQ</h6>
                     <h3 className=''>Frequenty asked questions</h3>
                     <p className='my-8'>We understand that you may have questions about this course. Thats why we have put together this comprehensive FAQ page to provide answers to some of the most common questions we receive. If you can not find the answer to your question here, please do not hesitate to reach out to our students support team.</p>
-                    <button className="bg-[#ef666c] hover:bg-[#ef666c] hover:underline px-10 w-max rounded-lg text-white font-bold py-3 inline-flex items-center">
+                    
+                    <a href="#contact">
+                    <button className="bg-[#ef666c] hover:bg-[#ef666c] hover:scale-110 duration-300 px-12 w-max rounded-lg text-white font-bold py-3 inline-flex items-center">
                         <span>Contact Us</span>
-                        <div className="mt-[2px] ml-3">
-                            <FaArrowRight size={"16px"} color={"#f3f4f6"}></FaArrowRight>
-                        </div>
                     </button>
+                    </a>
                 </div>
 
 
