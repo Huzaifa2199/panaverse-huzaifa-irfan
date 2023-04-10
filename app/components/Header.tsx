@@ -15,19 +15,19 @@ export const Header = () => {
         </a>
         <ul className='flex max-lg:hidden'>
           <a href="#quarters">
-            <li className='mx-7 hover:text-[#ef666c] duration-500 hover:scale-110 cursor-pointer text-lg font-semibold'>Quarters</li>
+            <li className='mx-7 duration-500 hover:scale-y-110 hover:scale-x-125 cursor-pointer text-lg font-semibold'>Quarters</li>
           </a>
 
           <a href="#about">
-            <li className='mx-7 hover:text-[#ef666c] duration-500 hover:scale-110 cursor-pointer text-lg font-semibold'>About Us</li>
+            <li className='mx-7 duration-500 hover:scale-y-110 hover:scale-x-125 cursor-pointer text-lg font-semibold'>About Us</li>
           </a>
 
           <a href="#faq">
-            <li className='mx-7 hover:text-[#ef666c] duration-500 hover:scale-110 cursor-pointer text-lg font-semibold'>FAQ</li>
+            <li className='mx-7 duration-500 hover:scale-y-110 hover:scale-x-125 cursor-pointer text-lg font-semibold'>FAQ</li>
           </a>
 
           <a href="#contact">
-            <li className='mx-7 hover:text-[#ef666c] duration-500 hover:scale-110 cursor-pointer text-lg font-semibold'>Contact Us</li>
+            <li className='mx-7 duration-500 hover:scale-y-110 hover:scale-x-125 cursor-pointer text-lg font-semibold'>Contact Us</li>
           </a>
         </ul>
 
